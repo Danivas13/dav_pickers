@@ -1,0 +1,208 @@
+		.dav_pickers{
+			display: inline-block;
+		}
+		.dav_pickers .inputdate{
+			 width: 100%;
+			 height: 100%;
+		}
+		.dav_pickers .inputdate .newimputdate{
+			font-family: 'Arial';
+			border: solid 3px #03A9F4;
+		    height: 100%;
+		    width: 100%;
+		    box-sizing: border-box;
+		    border-radius: 3px;
+		    background: #fff;
+		    cursor: pointer;
+		    text-align: center;
+		    line-height: 40px;
+		    color: #03A9F4;
+		}
+		.dav_pickers .inputdate .newimputdate .val{
+			height: 100%;
+		    vertical-align: middle;
+		    display: inline-block;
+		}
+		.dav_pickers .inputdate .casilla{
+			display: inline-block;
+		}
+		.dav_pickers .inputdate .controls{
+			display: none;
+			width: 100%;
+			background: #03A9F4;
+			margin-top: -3px;
+			padding-bottom: 15px;
+		}
+		.dav_pickers .inputdate .renglonx{
+			width: 20px;
+		    height: 20px;
+		    text-align: center;
+		    color: #fff;
+		    font-family: Arial;
+		    float: right;
+		    line-height: 20px;
+		    margin-right: 10px;
+		    margin-top: 10px;
+		    cursor: pointer;
+		}
+		.dav_pickers .inputdate .casillas{
+			padding-top: 15px;
+		    width: 85%;
+		    margin-left: auto;
+		    margin-right: auto;
+		    -webkit-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none; 
+		}
+		.dav_pickers .inputdate .casillab{
+		    box-sizing: border-box;
+		    width: 31%;
+		    display: inline-block;
+		    color: #fff;
+    		font-family: Arial;
+    		text-align: center;
+		}
+		.dav_pickers .inputdate .arrows{
+			width: 40%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.dav_pickers .inputdate .arrows img{
+			width: 100%;
+			margin-bottom: 10px;
+			margin-top: 10px;
+			cursor: pointer;
+			-webkit-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none; 
+		}
+		.dav_pickers .inputdate .popupop{
+			position: fixed;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    font-size: 2em;
+		}
+		.dav_pickers .inputdate .popupop .vermid{
+		    display: table;
+		    width: 100%;
+    		height: 100%;
+		}
+		.dav_pickers .inputdate .popupop .renglonx{
+			font-size: 1.5em;
+		    width: auto;
+		    height: auto;
+		    padding: 30px;
+		    padding-top: 50px;
+		    padding-right: 50px;
+		    position: absolute;
+		    right: 0;
+		}
+		.dav_pickers .inputdate .popupop .casillas{
+			display: table-cell;
+		    width: 100%;
+		    vertical-align: middle;
+		}
+		.dav_pickers .inputtime{
+			 width: 100%;
+			 height: 100%;
+		}
+		.dav_pickers .inputtime .newimputdate{
+			font-family: 'Arial';
+			border: solid 3px #03A9F4;
+		    height: 100%;
+		    width: 100%;
+		    box-sizing: border-box;
+		    border-radius: 3px;
+		    background: #fff;
+		    cursor: pointer;
+		    text-align: center;
+		    line-height: 40px;
+		    color: #03A9F4;
+		}
+		.dav_pickers .inputtime .newimputdate .val{
+			height: 100%;
+		    vertical-align: middle;
+		    display: inline-block;
+		}
+		.dav_pickers .inputtime .casilla{
+			display: inline-block;
+		}
+		.dav_pickers .inputtime .controls{
+			display: none;
+			width: 100%;
+			background: #03A9F4;
+			margin-top: -3px;
+			padding-bottom: 15px;
+		}
+		.dav_pickers .inputtime .renglonx{
+			width: 20px;
+		    height: 20px;
+		    text-align: center;
+		    color: #fff;
+		    font-family: Arial;
+		    float: right;
+		    line-height: 20px;
+		    margin-right: 10px;
+		    margin-top: 10px;
+		    cursor: pointer;
+		}
+		.dav_pickers .inputtime .casillas{
+			padding-top: 15px;
+		    width: 85%;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.dav_pickers .inputtime .casillab{
+		    box-sizing: border-box;
+		    width: 31%;
+		    display: inline-block;
+		    color: #fff;
+    		font-family: Arial;
+    		text-align: center;
+		}
+		.dav_pickers .inputtime .arrows{
+			width: 40%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.dav_pickers .inputtime .arrows img{
+			width: 100%;
+			margin-bottom: 10px;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+		.dav_pickers .inputtime .popupop{
+			position: fixed;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    font-size: 2em;
+		}
+		.dav_pickers .inputtime .popupop .vermid{
+		    display: table;
+		    width: 100%;
+    		height: 100%;
+		}
+		.dav_pickers .inputtime .popupop .renglonx{
+			font-size: 1.5em;
+		    width: auto;
+		    height: auto;
+		    padding: 30px;
+		    padding-top: 50px;
+		    padding-right: 50px;
+		    position: absolute;
+		    right: 0;
+		}
+		.dav_pickers .inputtime .popupop .casillas{
+			display: table-cell;
+		    width: 100%;
+		    vertical-align: middle;
+		}
+		.dav_pickers .inputtime .uso{
+			padding-left: 5px;
+		}

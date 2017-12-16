@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name="viewport" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="viewport" content="width=device-width" />
+	<!-- Requeriments -->
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/moment.min.js"></script>
+	<script type="text/javascript" src="dav_pickers/jquery.dav_pickers.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="dav_pickers/jquery.dav_pickers.css?hola">
+	<script type="text/javascript">
+		$(document).ready(function(){  
+		        //$("#demo_one").davpick({type: 'date', min_date: '2017-12-1', theme: "popup"});
+		        
+		        $("#demo_one, #demo_nine").davpick({type: 'date'});
+		        $("#demo_two").davpick({type: 'date', theme: "popup"});
+		        $("#demo_three").davpick({type: 'time'});
+		        $("#demo_four").davpick({type: 'time', theme: "popup"});
+		        $("#demo_five").davpick({type: 'date'});
+				$("#demo_six").davpick({type: 'time'});
+		        $("#demo_seven").davpick({type: 'date', onchange: function(id,value){
+		        		$("#change_seven").html("value of: '"+id+"' = "+ value);
+		        	}
+		    	});
+		    	$("#demo_eight").davpick({type: 'time', onchange: function(id,value){
+		        		$("#change_eight").html("value of: '"+id+"' = "+ value);
+		        	}
+		    	});
+		});
+		//fin input fecha $("#demo_one").davpick_set({min_date: 'hola'});
+	</script>
+	
+	<!-- End requeriments -->
+	<style type="text/css">
+		body{
+			font-family: Arial;
+			margin: 0;
+		    padding: 0;
+		}
+		.console{
+			width: 90%;
+			max-width: 500px;
+			height: 200px;
+			overflow-y: auto;
+			border: solid 5px #111;
+			margin: 5px;
+		}
+		button{
+			height: 50px;
+			width: 200px;
+		}
+		.responsive{
+			max-width: 800px;
+			width: 90%;
+			padding-left: 2%;
+			padding-right: 2%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		/* Input width and height */
+		.data_picker{
+			width: 300px;
+			height: 100px;
+
+		}
+		p{
+			max-width: 98%;
+			padding: 11px;
+		    background: #eee;
+		    border-radius: 10px;
+		    letter-spacing: 2px;
+		    overflow-x: auto;
+		    line-height: 1.5em;
+		}
+		b{
+			padding: 10px;
+			padding-left: 0;
+    		margin-right: 10px;
+		}
+		.headerc{
+			width: 100%;
+			height: 200px;
+			background: #03A9F4;
+			color: #fff;
+			letter-spacing: 3px;
+			position: relative;
+			margin: 0;
+			font-style: oblique;
+			display: table;
+		}
+		.headerc .vert{
+			display: table-cell;
+			vertical-align: middle;
+			height: 100%;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+		<div class="headerc">
+			<div class="vert"><h1>DAV PICKERS</h1></div>
+		</div>
+	<div class="responsive">
+		
+		<h2>Start</h2>
+		<p>&lt;!-- Requeriments --&gt;<br>
+	&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-3.2.1.min.js&quot;&gt;&lt;/script&gt;<br>
+	&lt;script type=&quot;text/javascript&quot; src=&quot;js/moment.min.js&quot;&gt;&lt;/script&gt;<br>
+	&lt;script type=&quot;text/javascript&quot; src=&quot;dav_pickers/jquery.dav_pickers.min.js&quot;&gt;&lt;/script&gt;<br>
+	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;dav_pickers/jquery.dav_pickers.css&quot;&gt;</p>
+		<h2>Date input</h2>
+		<p>$("#demo_one, #example2, #exam...").davpick({type: 'date'});</p>
+		<div id="demo_one" class="data_picker">Hi!</div><br>
+
+		<h2>Date input - opened on a dialog</h2>
+		<p>$("#demo_two").davpick({type: 'date', theme: 'popup'});</p>
+		<div id="demo_two" class="data_picker">Hi!</div><br>
+
+		<h2>Time input</h2>
+		<p>$("#demo_three").davpick({type: 'time'});</p>
+		<div id="demo_three" class="data_picker">TIME</div>
+
+		<h2>Time Input - opened on a dialog</h2>
+		<p>$("#demo_four").davpick({type: 'time', theme: 'popup'});</p>
+		<div id="demo_four" class="data_picker">TIME</div>
+
+		<br><br>
+		<h2>Get the value from dav pickers</h2>
+		<p>alert($("#demo_five").davpick_get());</p>
+		<div id="demo_five" class="data_picker"></div><br><br>
+		<button onclick="alert($('#demo_five').davpick_get());">GET DATE</button><br><br>
+
+
+		<div id="demo_six" class="data_picker"></div><br><br>
+		<button onclick="alert($('#demo_six').davpick_get());">GET TIME</button><br><br>
+
+		<h2>Callbacks</h2>
+		<p>$("#demo_seven").davpick({type: 'date', onchange: function(id,value){<br>
+			        		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#change_seven").html("value of: '"+id+"' = "+ value);<br>
+			        	&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+			    	});</p>
+		<div id="demo_seven" class="data_picker"></div>
+		<h5 id="change_seven"></h5>
+		<p>$("#demo_eight").davpick({type: 'date', onchange: function(id,value){<br>
+			        		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#change_eight").html("value of: '"+id+"' = "+ value);<br>
+			        	&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+			    	});</p>
+		<div id="demo_eight" class="data_picker"></div>
+		<h5 id="change_eight"></h5>
+		<br><br><br>
+		<h2>SetParameters after creation</h2>
+		<div id="demo_nine" class="data_picker"></div><br><br><p>$("#demo_nine").davpick_set({current_date: '2018-12-31'});</p><br>
+		<i>Note: you can change all parameters of one o multiply dav inputs excepts the parameter: 'type'.</i><br><br>
+		<button onclick="$('#demo_nine').davpick_set({current_date: '2018-12-31'});">SET DATE</button><br><br>
+		<br><br>
+		<h1>PARAMETERS</h1>
+		<p><b>type:</b>'date', 'time': Especify type of input generate.</p>
+		<p><b>theme:</b>'default', 'popup': Especify how the inputs controls are showed.</p>
+		<br>
+		<h3>Inputs type date:</h3>
+		<p><b>min_date:</b>'yyyy-mm-dd': Especify the minimum date can a user get.</p>
+		<p><b>max_date:</b>'yyyy-mm-dd': Especify the maximum date can a user get.</p>
+		<p><b>current_date:</b>'yyyy-mm-dd': Especify the initial date of the input.</p>
+		<br>
+		<h3>Inputs type time:</h3>
+		<p><b>min_time:</b>'hh:mm:ss': Especify the minimum time can a user get.</p>
+		<p><b>max_time:</b>'hh:mm:ss': Especify the maximum time can a user get.</p>
+		<p><b>current_time:</b>'yyyy-mm-dd': Especify the initial time of the input.</p>
+		<p><b>intervalo:</b>'1'-'30': Especify the interval of minutes to advance when the user click.</p><br><br>
+		<hr>
+		<i><h2>Developed by Danivas - 2017</h2></i>
+	</div>
+</body>
+</html>
