@@ -95,13 +95,17 @@
 			display: table-cell;
 			vertical-align: middle;
 			height: 100%;
-			text-align: center;
+			text-align: left;
+		}
+		.headerc .vert h1{
+			padding-left: 20%;
+			font-style: left;
 		}
 	</style>
 </head>
 <body>
 		<div class="headerc">
-			<div class="vert"><h1>DAV PICKERS</h1></div>
+			<div class="vert"><h1>Dav pickers</h1></div>
 		</div>
 	<div class="responsive">
 		
@@ -112,7 +116,11 @@
 	&lt;script type=&quot;text/javascript&quot; src=&quot;dav_pickers/jquery.dav_pickers.min.js&quot;&gt;&lt;/script&gt;<br>
 	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;dav_pickers/jquery.dav_pickers.css&quot;&gt;</p>
 		<h2>Date input</h2>
-		<p>$("#demo_one, #example2, #exam...").davpick({type: 'date'});</p>
+		<p><style type="text/css"><br>/* Input width and height are determinate by the initial div size */<br>
+		#demo_one{<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;width: 300px;<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;height: 100px;<br>
+			}<br></style><br><br>$("#demo_one, #example2, #exam...").davpick({type: 'date'});</p>
 		<div id="demo_one" class="data_picker">Hi!</div><br>
 
 		<h2>Date input - opened on a dialog</h2>
