@@ -12,7 +12,7 @@
 		var ture = ".inputdate .controls ";
 		var rutf = ".inputdate .newimputdate";
 		var ra = '.inputdate';
-		var rb = ".minuto #min";
+		var rn = ".minuto #min";
 		var rc = ".minuto .data";
 		var rd = ".uso .data";
 		var re = ".inputtime";
