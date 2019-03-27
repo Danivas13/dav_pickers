@@ -2,5 +2,5 @@
 library to generate custom date and time inputs.
 
 
-Demo in:
+Demo and instructions in:
 https://danivas.github.io/dav_pickers/
